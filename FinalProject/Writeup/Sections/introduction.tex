@@ -1,0 +1,9 @@
+Advertisements are on of the driving forces behind free content on the internet. However, they are often intrusive and unwanted, and their increased prevalence on the internet has resulted in aggravation for many users. This has led to the development of various techniques for blocking internet advertisements. 
+
+Most current methods for blocking advertisements on the internet use black lists or white lists: these are lists of either forbidden or accepted content that are cross referenced with the content of a webpage through the use of regular expressions to determine what should be marked as an advertisement and blocked from the user. 
+
+This method works well for most content, however, the major issue is that it requires maintaining an up-to-date blacklist, but with new websites surfacing every second, this becomes a tedious effort.  If an advertisement is not contained within the blacklist, that advertisement will not be blocked. As such, this approach works very well for data described in a black list, but fails entirely for all other data.
+
+This motivates the question - can we create an advertisement blocking system that does not utilize a black list? It seems that many advertisements on the internet share certain features, and therefore it may be possible to determine patterns that can be used to classify content on the internet as either being an advertisement or not.
+
+The remainder of this paper explores existing approaches, various machine learning techniques for this problem, possible features that perform well for this type of classification problem and proposes a method for blocking internet advertisements. Additionally, further improvements to the system that we implemented are discussed.

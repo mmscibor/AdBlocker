@@ -1,0 +1,77 @@
+\documentclass[11pt]{IEEEtran}
+% Packages
+\usepackage{graphicx}
+\usepackage{amsmath} 
+\usepackage{mathtools}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\lstset{%
+  basicstyle=\ttfamily,
+  breaklines=true,
+  columns=fullflexible,
+  frame=single,
+  frameround=tttt,
+  showstringspaces=false,
+}
+
+% Title stuff
+\title{Classification of Web Advertisements}
+
+\author{Sameer Chauhan, Michael Scibor, Christian Sherland\\
+\texttt{chauha3@cooper.edu, scibor@cooper.edu , sherla@cooper.edu}\\
+Department of Electrical Engineering\\
+The Cooper Union\\
+41 Cooper Square\\
+New York, NY 10003
+\thanks{ Thanks Professor Sam Keene}}
+
+% Journal Info
+\markboth{Journal of Makeene Learning, ̃Vol . ̃1, No. ̃1, ̃Dec ̃2013}{Shell \MakeLowercase{\text it{et al.}}: A Novel Tin Can Link}
+\IEEEpubid{2718--2818/00\$50.00 ̃\copyright ̃2013 IEEE }
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Advertisements can be very intrusive on the internet in many places and so their have been many attempts to block internet ads. This paper explores the characterization of internet advertisements from HTML metadata. Specifically, we explore machine learning techniques such as k-nearest neighbors and tree bagger to classify images on webpages as ad or non ads. This paper also explores a possible minimal set of features for accurate classification of internet advertisements.
+\end{abstract}
+
+\begin{IEEEkeywords}
+TreeBagger, KNN, PRT, Machine Learning, Feature Selection
+\end{IEEEkeywords}
+
+\section{Introduction}
+\input{Sections/introduction}
+
+\section{Prior Work}
+\input{Sections/prior}
+
+\section{Classification}
+\IEEEpubidadjcol
+\input{Sections/method}
+
+\section{Feature Space Reduction}
+\input{Sections/features}
+
+\section{Web Scraping}
+\input{Sections/scrape}
+
+\section{Future Work}
+\input{Sections/future}
+
+\section{Conclusion}
+\input{Sections/conclusion}
+
+\section*{Acknowledgments}
+Sam Keene, Ghandi
+
+
+\bibliographystyle{ieeetr}
+\bibliography{Sections/ref}
+
+\end{document}

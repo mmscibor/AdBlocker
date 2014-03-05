@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{adblock}
+W.~Palant, ``Adblock plus,'' 2013.
+
+\bibitem{adeater}
+{Nicholas Kushmeric}, ``Learning to remove internet advertisements,'' in {\em
+  Autonomous Agents}, University College Dublin, 1999.
+
+\bibitem{uci}
+K.~Bache and M.~Lichman, ``{UCI} machine learning repository,'' 2013.
+
+\bibitem{feat}
+{Mark Hall}, ``Correlation-based feature selection for machine learning,''
+  University of Waikato, 1999.
+
+\end{thebibliography}

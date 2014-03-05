@@ -1,0 +1,8 @@
+This paper has attempted to provide a viable solution for online advertisement classification in the absence of a blacklist. With a small feature space it was shown that the tree bagger algorithm which is very effective for this sort of data could get relatively good levels of classification on internet advertisements.
+
+Several different methods of feature extraction were also selected. It was determined that while entropy is not a very effective method for feature selection, correlation is low cost computationally and performs relatively well. More advanced techniques require more time to learn features but perform better. 
+
+It is also important to note that the misclassification of non-advertisements well very low. As this implies that our system would not block any data which the user wishes to see, we consider this a good result.
+
+Additionally, we attempted to implement a real feature extractor for advertisement images. This posed many challenges in that advertisements do not fit a single format and are not guaranteed to possess all the required features. While this poses a challenge, given more time we believe that a more general approach could be taken toward feature extraction that could get required data from the majority of advertisements. From there, it would be simple to port the existing code to a browser plugin that runs before page load to block advertisements. 
+

@@ -1,0 +1,14 @@
+For the purpose of creating an actual system for classification, we decided, as proof of concept, to implement the classification portion of this system in MATLAB and to get testing data for classification through a Python script. What this means for the end user is that if they specify a web page, the Python script will extract features from the HTML of that page and MATLAB will classify each image as an advertisement or non-advertisement. The MATLAB script output the results to the user for verification. We believe this to be sufficient proof of concept and chose this approach because it eliminates much of the difficulty that would go into turning this into a browser plug-in and allows to build upon existing tools like the PRT and BeautifulSoup.
+
+The first step to building this web scraper is to identify the HTML structure of online advertisements. After manually viewing the source for websites, the relevant features of an advertisement were determined to be contained within an anchor tag. Within the HTML it has the following structure:
+
+ \lstinputlisting[%
+    language=HTML,
+    backgroundcolor=\color{Gray!10},
+    identifierstyle=\color{magenta!50!black},
+    stringstyle=\color{blue}
+  ]{Sections/sample.html}
+
+Python's Beautiful Soup allows for quick parsing of any HTML or XML file and performs tree traversal for the user. In this case, a website is loaded by Beautiful Soup and is searched for achor tags. The resulting anchor tags are parsed for basic features and converted into a boolean valued feature vector. The feature vectors for each image are collected into a dataset that is output into a Comma-Separated Value(CSV) file. The CSV file can be imported  by MATLAB to perform classification using the trained algorithm. 
+
+
