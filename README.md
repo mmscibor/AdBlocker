@@ -21,6 +21,6 @@ The training phase, depending on the processing power of the machine, would last
 Authors
 -------
 
- -Christian Sherland
- -Michael Scibor
- -Sameer Chauhan
+ - Christian Sherland
+ - Michael Scibor
+ - Sameer Chauhan
